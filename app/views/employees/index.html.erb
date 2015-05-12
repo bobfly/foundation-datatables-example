@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Employees</h1>
+<div class="large-12 columns">
+  <table id="employees" data-source="<%= employees_path(format: :json) %>">
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Date of birth</th>
+        <th>City</th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'New Employee', new_employee_path %>
